@@ -95,3 +95,4 @@ C:\Users\hello\Documents\GitHub\git-Projects-Site-ASPNet\obj\Debug\net9.0\refint
 C:\Users\hello\Documents\GitHub\git-Projects-Site-ASPNet\obj\Debug\net9.0\HelloWorldApp.pdb
 C:\Users\hello\Documents\GitHub\git-Projects-Site-ASPNet\obj\Debug\net9.0\HelloWorldApp.genruntimeconfig.cache
 C:\Users\hello\Documents\GitHub\git-Projects-Site-ASPNet\obj\Debug\net9.0\ref\HelloWorldApp.dll
+C:\Users\hello\Documents\GitHub\git-Projects-Site-ASPNet\obj\Debug\net9.0\HelloWorldApp.sourcelink.json
