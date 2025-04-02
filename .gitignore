@@ -1,0 +1,63 @@
+# .NET Core
+*.swp
+*.user
+*.userosscache
+*.sln.docstates
+*.dll
+*.exe
+*.pdb
+*.dll.config
+*.cache
+*.suo
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio
+.vs/
+.vscode/
+*.nupkg
+*.pfx
+*.snk
+
+# Sensitive configuration files
+**/appsettings.Development.json
+**/appsettings.Production.json
+**/appsettings.Staging.json
+**/appsettings.Local.json
+**/secrets.json
+
+# Keep appsettings.json but with placeholder values for sensitive data
+# Do not include actual API keys in appsettings.json that gets committed
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Misc
+.DS_Store
+Thumbs.db
