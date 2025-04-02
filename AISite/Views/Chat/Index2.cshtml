@@ -1,0 +1,203 @@
+@model List<AISite.Models.ChatMessage>
+@{
+    ViewData["Title"] = "AI Chat";
+}
+
+<div class="flex flex-col py-2 pb-0 mb-0" style="margin-bottom: 0 !important;">
+    <div class="flex items-center justify-between mb-6 mx-auto w-full max-w-4xl">
+        <h1 class="text-3xl font-bold text-gradient">AI Assistant</h1>
+        <div class="flex items-center space-x-3">
+            <button id="copyAllChat" class="px-4 py-2 bg-dark-100/80 text-gray-300 rounded-md hover:bg-dark-200 transition-all duration-300 flex items-center space-x-2 shadow-md border border-gray-800/30">
+                <i class="fas fa-copy"></i>
+                <span>Copy All</span>
+            </button>
+            <button id="clearChat" class="px-4 py-2 bg-dark-100/80 text-gray-300 rounded-md hover:bg-dark-200 transition-all duration-300 flex items-center space-x-2 shadow-md border border-gray-800/30">
+                <i class="fas fa-trash-alt"></i>
+                <span>Clear Chat</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Chat container with improved style -->
+    <div id="chatContainer" class="h-[60vh] overflow-y-auto mb-2 glass-effect rounded-xl p-6 space-y-6 border border-gray-800/30 mx-auto w-full max-w-4xl shadow-card">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var message in Model)
+            {
+                <div class="chat-message @(message.Role == "user" ? "user-message" : "assistant-message") mb-6 animate-fade-in">
+                    @if (message.Role == "user")
+                    {
+                        <div class="flex justify-end">
+                            <div class="max-w-[80%] bg-gradient-to-r from-primary-600 to-primary-700 text-white p-4 rounded-2xl rounded-tr-none relative group shadow-message border border-primary-500/20 transform transition-transform duration-200 hover:scale-[1.01]">
+                                <button class="copy-btn absolute top-3 right-3 bg-primary-500/80 text-white p-1.5 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-primary-400/80"
+                                        onclick="copyToClipboard(this, this.closest('.max-w-\\[80\\%\\]').querySelector('p').textContent);"
+                                        title="Copy to clipboard">
+                                    <i class="fas fa-copy text-xs"></i>
+                                </button>
+                                <p class="whitespace-pre-wrap text-white/95 leading-relaxed">@message.Content</p>
+                                <div class="text-xs text-white/70 mt-2 text-right font-light">
+                                    @message.Timestamp.ToString("g")
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="flex justify-start">
+                            <div class="max-w-[80%] bg-dark-100/80 text-gray-200 p-4 rounded-2xl rounded-tl-none relative group shadow-message border border-gray-700/20 backdrop-blur-sm transform transition-transform duration-200 hover:scale-[1.01]">
+                                <button class="copy-btn absolute top-3 right-3 bg-dark-200/80 text-gray-300 p-1.5 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-dark-300/80"
+                                        onclick="copyToClipboard(this, this.closest('.max-w-\\[80\\%\\]').querySelector('p').textContent);"
+                                        title="Copy to clipboard">
+                                    <i class="fas fa-copy text-xs"></i>
+                                </button>
+                                <p class="whitespace-pre-wrap text-gray-100/95 leading-relaxed">@message.Content</p>
+                                <div class="text-xs text-gray-400 mt-2 font-light">
+                                    @message.Timestamp.ToString("g")
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        }
+        else
+        {
+            <div class="flex items-center justify-center py-16">
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto bg-gradient-to-br from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mb-6 shadow-lg animate-pulse-slow">
+                        <i class="fas fa-robot text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gradient mb-2">How can I assist you today?</h3>
+                    <p class="text-gray-400 max-w-md mx-auto">Type a message below to start a conversation with the AI assistant.</p>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Enhanced typing indicator -->
+    <div id="typingIndicator" style="display: none;" class="mb-2 mx-auto w-full max-w-4xl">
+        <div class="flex justify-start">
+            <div class="max-w-[80%] bg-dark-100/80 text-gray-200 p-4 rounded-2xl rounded-tl-none shadow-message border border-gray-700/20 backdrop-blur-sm">
+                <div class="flex space-x-3 items-center">
+                    <div class="w-2.5 h-2.5 bg-gradient-to-r from-primary-400 to-primary-500 rounded-full animate-bounce"></div>
+                    <div class="w-2.5 h-2.5 bg-gradient-to-r from-primary-400 to-primary-500 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                    <div class="w-2.5 h-2.5 bg-gradient-to-r from-primary-400 to-primary-500 rounded-full animate-bounce" style="animation-delay: 0.4s"></div>
+                    <span class="text-sm text-gray-400 ml-1">AI is thinking...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced message input -->
+    <div class="mt-1 mb-2 sticky bottom-0">
+        <form id="chatForm" class="flex items-center space-x-3 mx-auto w-full max-w-4xl mb-0">
+            <div class="relative flex-grow">
+                <textarea id="messageInput"
+                          class="w-full p-4 pr-14 bg-dark-100/90 border border-gray-700/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500/50 text-gray-200 resize-none shadow-input backdrop-blur-sm transition-all duration-300"
+                          placeholder="Type your message..."
+                          rows="1" style="min-height: 60px;"></textarea>
+                <button type="submit" class="absolute right-3 bottom-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white p-2 rounded-lg hover:from-primary-400 hover:to-primary-500 transition-all duration-300 shadow-md">
+                    <i class="fas fa-paper-plane text-sm"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // This will force a page refresh every 2 seconds if there's a pending message
+        let waitingForResponse = false;
+
+        function startPolling() {
+            if (waitingForResponse) {
+                // Force reload the page to see the latest messages
+                window.location.reload();
+            }
+        }
+
+        // Set up polling every 2 seconds
+        setInterval(startPolling, 2000);
+
+        // Copy all chat content
+        document.getElementById('copyAllChat').addEventListener('click', function() {
+            // Add a subtle animation to the button
+            this.classList.add('scale-95');
+            setTimeout(() => {
+                this.classList.remove('scale-95');
+            }, 200);
+
+            // Get all messages
+            const chatContainer = document.getElementById('chatContainer');
+            const messages = chatContainer.querySelectorAll('.chat-message');
+
+            if (messages.length === 0) {
+                alert('No messages to copy.');
+                return;
+            }
+
+            // Build the text content
+            let textContent = '';
+            messages.forEach(message => {
+                const role = message.classList.contains('user-message') ? 'User: ' : 'AI: ';
+                const content = message.querySelector('p').textContent;
+                textContent += role + content + '\n\n';
+            });
+
+            // Copy to clipboard
+            copyToClipboard(this, textContent);
+        });
+
+        // Function to copy text to clipboard
+        function copyToClipboard(button, text) {
+            // Create a temporary textarea element to handle complex text with line breaks
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed';  // Prevent scrolling to bottom
+            document.body.appendChild(textarea);
+            textarea.select();
+
+            try {
+                // Try the modern clipboard API first
+                if (navigator.clipboard && window.isSecureContext) {
+                    navigator.clipboard.writeText(text).then(function() {
+                        showCopySuccess(button);
+                    }).catch(function(err) {
+                        // Fall back to document.execCommand
+                        document.execCommand('copy');
+                        showCopySuccess(button);
+                    });
+                } else {
+                    // For older browsers or non-secure contexts
+                    const successful = document.execCommand('copy');
+                    if (successful) {
+                        showCopySuccess(button);
+                    } else {
+                        console.error('Could not copy text');
+                        alert('Failed to copy text. Please try again.');
+                    }
+                }
+            } catch (err) {
+                console.error('Could not copy text: ', err);
+                alert('Failed to copy text. Please try again.');
+            } finally {
+                // Clean up
+                document.body.removeChild(textarea);
+            }
+        }
+
+        // Show success feedback
+        function showCopySuccess(button) {
+            // Show feedback
+            const originalIcon = button.innerHTML;
+            button.innerHTML = '<i class="fas fa-check text-xs"></i>';
+            button.classList.add('bg-green-700');
+
+            // Reset after 2 seconds
+            setTimeout(function() {
+                button.innerHTML = originalIcon;
+                button.classList.remove('bg-green-700');
+            }, 2000);
+        }
+    </script>
+}

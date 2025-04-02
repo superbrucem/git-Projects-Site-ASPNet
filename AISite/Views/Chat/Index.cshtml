@@ -1,0 +1,92 @@
+@model List<AISite.Models.ChatMessage>
+@{
+    ViewData["Title"] = "AI Chat";
+}
+
+<div class="flex flex-col h-[calc(100vh-12rem)]">
+    <div class="flex items-center justify-between mb-4">
+        <h1 class="text-2xl font-bold text-white">AI Chat</h1>
+        <button id="clearChat" class="px-4 py-2 bg-[#1E1F24] text-gray-300 rounded-md hover:bg-[#2D2F34] transition-colors">
+            <i class="fas fa-trash-alt mr-2"></i>Clear Chat
+        </button>
+    </div>
+
+    <div id="chatContainer" class="flex-grow overflow-y-auto mb-4 bg-[#1E1F24] rounded-lg p-4 space-y-4">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var message in Model)
+            {
+                <div class="chat-message @(message.Role == "user" ? "user-message" : "assistant-message")">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-3">
+                            @if (message.Role == "user")
+                            {
+                                <div class="w-8 h-8 rounded-full bg-[#8AB4F8] flex items-center justify-center text-[#1E1F24]">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="w-8 h-8 rounded-full bg-[#E8EAED] flex items-center justify-center text-[#1E1F24]">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                            }
+                        </div>
+                        <div class="flex-grow">
+                            <div class="bg-[#2D2F34] p-3 rounded-lg">
+                                <p class="text-gray-200 whitespace-pre-wrap">@message.Content</p>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-1">
+                                @message.Timestamp.ToString("g")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="flex items-center justify-center h-full">
+                <div class="text-center text-gray-500">
+                    <i class="fas fa-comments text-4xl mb-2"></i>
+                    <p>Start a conversation with the AI</p>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div id="typingIndicator" style="display: none;">
+        <div class="flex items-start mb-4">
+            <div class="flex-shrink-0 mr-3">
+                <div class="w-8 h-8 rounded-full bg-[#E8EAED] flex items-center justify-center text-[#1E1F24]">
+                    <i class="fas fa-robot"></i>
+                </div>
+            </div>
+            <div class="flex-grow">
+                <div class="bg-[#2D2F34] p-3 rounded-lg">
+                    <div class="flex space-x-2">
+                        <div class="w-2 h-2 bg-gray-500 rounded-full animate-bounce"></div>
+                        <div class="w-2 h-2 bg-gray-500 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                        <div class="w-2 h-2 bg-gray-500 rounded-full animate-bounce" style="animation-delay: 0.4s"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-auto">
+        <form id="chatForm" class="flex items-center space-x-2">
+            <div class="relative flex-grow">
+                <textarea id="messageInput"
+                          class="w-full p-3 pr-12 bg-[#1E1F24] border border-[#2D2F34] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8AB4F8] text-gray-200 resize-none"
+                          placeholder="Type your message..."
+                          rows="1"></textarea>
+                <button type="submit" class="absolute right-2 bottom-2 text-[#8AB4F8] hover:text-blue-400 transition-colors">
+                    <i class="fas fa-paper-plane text-xl"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- JavaScript functionality is now in ~/js/chat.js -->
