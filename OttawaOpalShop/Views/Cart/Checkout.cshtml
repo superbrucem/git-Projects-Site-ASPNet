@@ -153,8 +153,12 @@
                             </div>
                         </div>
 
-                        <!-- PayPal Button Container -->
-                        <div id="paypal-button-container" class="mb-3"></div>
+                        <!-- Direct PayPal Button -->
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary btn-lg w-100" style="background-color: #0070ba; border-color: #0070ba;">
+                                <i class="fab fa-paypal me-2"></i> PLACE ORDER WITH PAYPAL ($@Model.Total.ToString("0.00"))
+                            </button>
+                        </div>
 
                         <!-- Back to Cart Button -->
                         <div class="d-grid">
@@ -175,73 +179,20 @@
 </div>
 
 @section Scripts {
-    <!-- PayPal SDK -->
-    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
-
     <script>
-        // Initialize PayPal button
+        // Simple form processing
         document.addEventListener('DOMContentLoaded', function() {
-            // Get the total amount from the page
-            const totalElement = document.getElementById('paypal-total');
-            const total = totalElement ? totalElement.textContent.replace('$', '') : '0.00';
+            const form = document.getElementById('checkout-form');
 
-            console.log('Initializing PayPal with amount:', total);
+            form.addEventListener('submit', function(event) {
+                // Show processing message
+                const submitBtn = form.querySelector('button[type="submit"]');
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> REDIRECTING TO PAYPAL...';
 
-            // Initialize PayPal button
-            paypal.Buttons({
-                style: {
-                    shape: 'rect',
-                    color: 'blue',
-                    layout: 'vertical',
-                    label: 'paypal'
-                },
-
-                // Create order
-                createOrder: function(data, actions) {
-                    return actions.order.create({
-                        purchase_units: [{
-                            amount: {
-                                value: total,
-                                currency_code: 'USD'
-                            },
-                            description: 'Ottawa Opal Shop Purchase'
-                        }]
-                    });
-                },
-
-                // On approval
-                onApprove: function(data, actions) {
-                    // Show loading message
-                    const buttonContainer = document.getElementById('paypal-button-container');
-                    buttonContainer.innerHTML = '<div class="alert alert-info text-center"><i class="fas fa-spinner fa-spin me-2"></i> Processing your payment...</div>';
-
-                    return actions.order.capture().then(function(details) {
-                        console.log('Transaction completed by ' + details.payer.name.given_name);
-
-                        // Add transaction ID to form
-                        const form = document.getElementById('checkout-form');
-                        const transactionIdInput = document.createElement('input');
-                        transactionIdInput.type = 'hidden';
-                        transactionIdInput.name = 'TransactionId';
-                        transactionIdInput.value = details.id;
-                        form.appendChild(transactionIdInput);
-
-                        // Update message
-                        buttonContainer.innerHTML = '<div class="alert alert-success text-center"><i class="fas fa-check-circle me-2"></i> Payment successful! Completing your order...</div>';
-
-                        // Submit form to complete order
-                        setTimeout(function() {
-                            form.submit();
-                        }, 1500);
-                    });
-                },
-
-                // On error
-                onError: function(err) {
-                    console.error('PayPal error:', err);
-                    alert('There was an error processing your payment. Please try again or contact customer support.');
-                }
-            }).render('#paypal-button-container');
+                // Allow form submission
+                return true;
+            });
         });
     </script>
 }

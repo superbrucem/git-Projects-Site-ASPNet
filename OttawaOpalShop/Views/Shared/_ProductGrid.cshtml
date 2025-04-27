@@ -50,18 +50,6 @@
     </div>
     <div class="col-md-6">
         <div class="d-flex justify-content-md-end align-items-center">
-            <span class="me-2">COLUMNS:</span>
-            <div class="btn-group me-3" role="group">
-                @{
-                    var currentColumns = Context.Request.Query["columns"].ToString();
-                    var isDefaultColumns = string.IsNullOrEmpty(currentColumns) || currentColumns == "4";
-                }
-                <button type="button" class="btn btn-outline-secondary column-btn @(currentColumns == "1" ? "active" : "")" data-columns="1" onclick="setColumns(1)">1</button>
-                <button type="button" class="btn btn-outline-secondary column-btn @(currentColumns == "2" ? "active" : "")" data-columns="2" onclick="setColumns(2)">2</button>
-                <button type="button" class="btn btn-outline-secondary column-btn @(currentColumns == "3" ? "active" : "")" data-columns="3" onclick="setColumns(3)">3</button>
-                <button type="button" class="btn btn-outline-secondary column-btn @(isDefaultColumns ? "active" : "")" data-columns="4" onclick="setColumns(4)">4</button>
-                <button type="button" class="btn btn-outline-secondary column-btn @(currentColumns == "6" ? "active" : "")" data-columns="6" onclick="setColumns(6)">6</button>
-            </div>
             <span class="me-2">PRODUCTS PER PAGE:</span>
             <select id="per-page-select" class="form-select" style="width: auto;" onchange="applyFilters()">
                 @{
