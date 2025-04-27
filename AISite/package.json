@@ -1,0 +1,17 @@
+{
+  "name": "aisite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css:watch": "tailwindcss -i ./wwwroot/css/site.css -o ./wwwroot/css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^4.1.0"
+  }
+}
+

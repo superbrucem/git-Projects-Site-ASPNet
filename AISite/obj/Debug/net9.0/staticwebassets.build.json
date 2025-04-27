@@ -1,0 +1,3082 @@
+{
+  "Version": 1,
+  "Hash": "96b/33wxXgkFQi8p89uBHq4fcqyHElltaKqx7OQfgPQ=",
+  "Source": "AISite",
+  "BasePath": "_content/AISite",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AISite\\wwwroot",
+      "Source": "AISite",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\",
+      "BasePath": "_content/AISite",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\cwonljnytj-7m2uevlcfw.gz",
+      "SourceId": "AISite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "js/chat-polling#[.{fingerprint=7m2uevlcfw}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat-polling.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "b2m2x4jlyg",
+      "Integrity": "M50Vb1KgW8MiZpLJmGKisIhURAq61HCPLtjLNpIHl4A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat-polling.js"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\eab2ta3vss-r6pdwpwznz.gz",
+      "SourceId": "AISite",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "AISite#[.{fingerprint=r6pdwpwznz}]!.bundle.scp.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AISite.bundle.scp.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "d6grethvka",
+      "Integrity": "pbz0UQS1JYBrqNtqa4/bn+nfrZml3H5rhq+M3kCAva4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AISite.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\eehv2r3m61-mh4zefqudq.gz",
+      "SourceId": "AISite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "css/site#[.{fingerprint=mh4zefqudq}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\css\\site.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "r14yvr0qh3",
+      "Integrity": "AWxu2JNrZS680xPvNmYusbvxrcvc+Y86e0F/aDQhqWc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\f31cry9udg-12rt5uasb4.gz",
+      "SourceId": "AISite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "css/custom#[.{fingerprint=12rt5uasb4}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\css\\custom.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "byob8f7cj3",
+      "Integrity": "7ZhHF7SZvhC9BLDbC6rTzNTluHKXQP4zu1mbl0dhYy8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\css\\custom.css"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\fx9et1lbmm-xtxxf3hu2r.gz",
+      "SourceId": "AISite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "js/site#[.{fingerprint=xtxxf3hu2r}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\site.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "rl5dcbfpcw",
+      "Integrity": "Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\i78m1r5lga-783vty38gy.gz",
+      "SourceId": "AISite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "js/chat#[.{fingerprint=783vty38gy}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "mgtx3x8p0x",
+      "Integrity": "ZtqEoXZGnyJR0/21qM/yJHYEMAwF38r4ETO2eb6uFLU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat.js"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\lzdarbcbva-61n19gt1b8.gz",
+      "SourceId": "AISite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "favicon#[.{fingerprint=61n19gt1b8}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\favicon.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "nezsohjtde",
+      "Integrity": "wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\p75dohh662-r6pdwpwznz.gz",
+      "SourceId": "AISite",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "AISite#[.{fingerprint=r6pdwpwznz}]?.styles.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\bundle\\AISite.styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "d6grethvka",
+      "Integrity": "pbz0UQS1JYBrqNtqa4/bn+nfrZml3H5rhq+M3kCAva4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\bundle\\AISite.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\t1kd5da0t8-i30svtvrtf.gz",
+      "SourceId": "AISite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "js/chat-new#[.{fingerprint=i30svtvrtf}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat-new.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "cu7cgl8atv",
+      "Integrity": "tDbSIDuC4k8g8o6707iUHh6zCg/V1MwoVPfa4Qsn56E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat-new.js"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\bundle\\AISite.styles.css",
+      "SourceId": "AISite",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "AISite#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "r6pdwpwznz",
+      "Integrity": "PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\bundle\\AISite.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AISite.bundle.scp.css",
+      "SourceId": "AISite",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "AISite#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "r6pdwpwznz",
+      "Integrity": "PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AISite.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\css\\custom.css",
+      "SourceId": "AISite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "css/custom#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "12rt5uasb4",
+      "Integrity": "OSv1751Jbe0CkQqetU1i7UY/7YdZRy09mibgro+9vyk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\custom.css"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\css\\site.css",
+      "SourceId": "AISite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mh4zefqudq",
+      "Integrity": "eosHg4ZhvtgkBfUZkaEBebp3gtfCrK/1R3e0nwILrnc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\favicon.ico",
+      "SourceId": "AISite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "61n19gt1b8",
+      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat-new.js",
+      "SourceId": "AISite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "js/chat-new#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i30svtvrtf",
+      "Integrity": "gk2ADKasxnngpRQcJ5ZSYRc1urV2bkQeuo903lvsbDY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chat-new.js"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat-polling.js",
+      "SourceId": "AISite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "js/chat-polling#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7m2uevlcfw",
+      "Integrity": "QZ0TPgbEpsS0B+GL0yZOiukgSRf+/joKy3FJf0syCIE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chat-polling.js"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat.js",
+      "SourceId": "AISite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "js/chat#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "783vty38gy",
+      "Integrity": "6ahhNCTs3unHySqfnjoXQ9J/eAG7KMecMMpfKR7+mq0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chat.js"
+    },
+    {
+      "Identity": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\site.js",
+      "SourceId": "AISite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\",
+      "BasePath": "_content/AISite",
+      "RelativePath": "js/site#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xtxxf3hu2r",
+      "Integrity": "hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "AISite.bundle.scp.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\eab2ta3vss-r6pdwpwznz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001851851852"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "539"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pbz0UQS1JYBrqNtqa4/bn+nfrZml3H5rhq+M3kCAva4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA="
+        }
+      ]
+    },
+    {
+      "Route": "AISite.bundle.scp.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AISite.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1124"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA="
+        }
+      ]
+    },
+    {
+      "Route": "AISite.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\eab2ta3vss-r6pdwpwznz.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pbz0UQS1JYBrqNtqa4/bn+nfrZml3H5rhq+M3kCAva4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pbz0UQS1JYBrqNtqa4/bn+nfrZml3H5rhq+M3kCAva4="
+        }
+      ]
+    },
+    {
+      "Route": "AISite.r6pdwpwznz.bundle.scp.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\eab2ta3vss-r6pdwpwznz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001851851852"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "539"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pbz0UQS1JYBrqNtqa4/bn+nfrZml3H5rhq+M3kCAva4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r6pdwpwznz"
+        },
+        {
+          "Name": "label",
+          "Value": "AISite.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA="
+        }
+      ]
+    },
+    {
+      "Route": "AISite.r6pdwpwznz.bundle.scp.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AISite.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1124"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r6pdwpwznz"
+        },
+        {
+          "Name": "label",
+          "Value": "AISite.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA="
+        }
+      ]
+    },
+    {
+      "Route": "AISite.r6pdwpwznz.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\eab2ta3vss-r6pdwpwznz.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pbz0UQS1JYBrqNtqa4/bn+nfrZml3H5rhq+M3kCAva4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r6pdwpwznz"
+        },
+        {
+          "Name": "label",
+          "Value": "AISite.bundle.scp.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pbz0UQS1JYBrqNtqa4/bn+nfrZml3H5rhq+M3kCAva4="
+        }
+      ]
+    },
+    {
+      "Route": "AISite.r6pdwpwznz.styles.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\p75dohh662-r6pdwpwznz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001851851852"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "539"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pbz0UQS1JYBrqNtqa4/bn+nfrZml3H5rhq+M3kCAva4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r6pdwpwznz"
+        },
+        {
+          "Name": "label",
+          "Value": "AISite.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA="
+        }
+      ]
+    },
+    {
+      "Route": "AISite.r6pdwpwznz.styles.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\bundle\\AISite.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1124"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r6pdwpwznz"
+        },
+        {
+          "Name": "label",
+          "Value": "AISite.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA="
+        }
+      ]
+    },
+    {
+      "Route": "AISite.r6pdwpwznz.styles.css.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\p75dohh662-r6pdwpwznz.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pbz0UQS1JYBrqNtqa4/bn+nfrZml3H5rhq+M3kCAva4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r6pdwpwznz"
+        },
+        {
+          "Name": "label",
+          "Value": "AISite.styles.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pbz0UQS1JYBrqNtqa4/bn+nfrZml3H5rhq+M3kCAva4="
+        }
+      ]
+    },
+    {
+      "Route": "AISite.styles.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\p75dohh662-r6pdwpwznz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001851851852"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "539"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pbz0UQS1JYBrqNtqa4/bn+nfrZml3H5rhq+M3kCAva4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA="
+        }
+      ]
+    },
+    {
+      "Route": "AISite.styles.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\bundle\\AISite.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1124"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PVvgPrPJmJ7QjHd51G8zVj9RVgIGlZJfyQWtX1NOCBA="
+        }
+      ]
+    },
+    {
+      "Route": "AISite.styles.css.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\p75dohh662-r6pdwpwznz.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pbz0UQS1JYBrqNtqa4/bn+nfrZml3H5rhq+M3kCAva4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pbz0UQS1JYBrqNtqa4/bn+nfrZml3H5rhq+M3kCAva4="
+        }
+      ]
+    },
+    {
+      "Route": "css/custom.12rt5uasb4.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\f31cry9udg-12rt5uasb4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001703577513"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "586"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ZhHF7SZvhC9BLDbC6rTzNTluHKXQP4zu1mbl0dhYy8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 23:09:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"OSv1751Jbe0CkQqetU1i7UY/7YdZRy09mibgro+9vyk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "12rt5uasb4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/custom.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OSv1751Jbe0CkQqetU1i7UY/7YdZRy09mibgro+9vyk="
+        }
+      ]
+    },
+    {
+      "Route": "css/custom.12rt5uasb4.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\css\\custom.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OSv1751Jbe0CkQqetU1i7UY/7YdZRy09mibgro+9vyk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 23:09:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "12rt5uasb4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/custom.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OSv1751Jbe0CkQqetU1i7UY/7YdZRy09mibgro+9vyk="
+        }
+      ]
+    },
+    {
+      "Route": "css/custom.12rt5uasb4.css.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\f31cry9udg-12rt5uasb4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "586"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ZhHF7SZvhC9BLDbC6rTzNTluHKXQP4zu1mbl0dhYy8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 23:09:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "12rt5uasb4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/custom.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7ZhHF7SZvhC9BLDbC6rTzNTluHKXQP4zu1mbl0dhYy8="
+        }
+      ]
+    },
+    {
+      "Route": "css/custom.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\f31cry9udg-12rt5uasb4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001703577513"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "586"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ZhHF7SZvhC9BLDbC6rTzNTluHKXQP4zu1mbl0dhYy8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 23:09:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"OSv1751Jbe0CkQqetU1i7UY/7YdZRy09mibgro+9vyk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OSv1751Jbe0CkQqetU1i7UY/7YdZRy09mibgro+9vyk="
+        }
+      ]
+    },
+    {
+      "Route": "css/custom.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\css\\custom.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OSv1751Jbe0CkQqetU1i7UY/7YdZRy09mibgro+9vyk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 23:09:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OSv1751Jbe0CkQqetU1i7UY/7YdZRy09mibgro+9vyk="
+        }
+      ]
+    },
+    {
+      "Route": "css/custom.css.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\f31cry9udg-12rt5uasb4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "586"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ZhHF7SZvhC9BLDbC6rTzNTluHKXQP4zu1mbl0dhYy8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 23:09:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7ZhHF7SZvhC9BLDbC6rTzNTluHKXQP4zu1mbl0dhYy8="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\eehv2r3m61-mh4zefqudq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.016129032258"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "61"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AWxu2JNrZS680xPvNmYusbvxrcvc+Y86e0F/aDQhqWc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 21:04:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"eosHg4ZhvtgkBfUZkaEBebp3gtfCrK/1R3e0nwILrnc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eosHg4ZhvtgkBfUZkaEBebp3gtfCrK/1R3e0nwILrnc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eosHg4ZhvtgkBfUZkaEBebp3gtfCrK/1R3e0nwILrnc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 21:04:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eosHg4ZhvtgkBfUZkaEBebp3gtfCrK/1R3e0nwILrnc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\eehv2r3m61-mh4zefqudq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "61"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AWxu2JNrZS680xPvNmYusbvxrcvc+Y86e0F/aDQhqWc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 21:04:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AWxu2JNrZS680xPvNmYusbvxrcvc+Y86e0F/aDQhqWc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.mh4zefqudq.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\eehv2r3m61-mh4zefqudq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.016129032258"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "61"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AWxu2JNrZS680xPvNmYusbvxrcvc+Y86e0F/aDQhqWc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 21:04:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"eosHg4ZhvtgkBfUZkaEBebp3gtfCrK/1R3e0nwILrnc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mh4zefqudq"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eosHg4ZhvtgkBfUZkaEBebp3gtfCrK/1R3e0nwILrnc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.mh4zefqudq.css",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eosHg4ZhvtgkBfUZkaEBebp3gtfCrK/1R3e0nwILrnc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 21:04:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mh4zefqudq"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eosHg4ZhvtgkBfUZkaEBebp3gtfCrK/1R3e0nwILrnc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.mh4zefqudq.css.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\eehv2r3m61-mh4zefqudq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "61"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AWxu2JNrZS680xPvNmYusbvxrcvc+Y86e0F/aDQhqWc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 21:04:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mh4zefqudq"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AWxu2JNrZS680xPvNmYusbvxrcvc+Y86e0F/aDQhqWc="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.61n19gt1b8.ico",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\lzdarbcbva-61n19gt1b8.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000405022276"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2468"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:51:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "61n19gt1b8"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.61n19gt1b8.ico",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:51:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "61n19gt1b8"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.61n19gt1b8.ico.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\lzdarbcbva-61n19gt1b8.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2468"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:51:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "61n19gt1b8"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\lzdarbcbva-61n19gt1b8.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000405022276"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2468"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:51:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:51:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\lzdarbcbva-61n19gt1b8.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2468"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:51:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat-new.i30svtvrtf.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\t1kd5da0t8-i30svtvrtf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000605326877"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1651"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tDbSIDuC4k8g8o6707iUHh6zCg/V1MwoVPfa4Qsn56E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 22:16:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gk2ADKasxnngpRQcJ5ZSYRc1urV2bkQeuo903lvsbDY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i30svtvrtf"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chat-new.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gk2ADKasxnngpRQcJ5ZSYRc1urV2bkQeuo903lvsbDY="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat-new.i30svtvrtf.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat-new.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5954"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gk2ADKasxnngpRQcJ5ZSYRc1urV2bkQeuo903lvsbDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 22:16:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i30svtvrtf"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chat-new.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gk2ADKasxnngpRQcJ5ZSYRc1urV2bkQeuo903lvsbDY="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat-new.i30svtvrtf.js.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\t1kd5da0t8-i30svtvrtf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1651"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tDbSIDuC4k8g8o6707iUHh6zCg/V1MwoVPfa4Qsn56E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 22:16:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i30svtvrtf"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chat-new.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tDbSIDuC4k8g8o6707iUHh6zCg/V1MwoVPfa4Qsn56E="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat-new.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\t1kd5da0t8-i30svtvrtf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000605326877"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1651"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tDbSIDuC4k8g8o6707iUHh6zCg/V1MwoVPfa4Qsn56E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 22:16:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gk2ADKasxnngpRQcJ5ZSYRc1urV2bkQeuo903lvsbDY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gk2ADKasxnngpRQcJ5ZSYRc1urV2bkQeuo903lvsbDY="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat-new.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat-new.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5954"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gk2ADKasxnngpRQcJ5ZSYRc1urV2bkQeuo903lvsbDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 22:16:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gk2ADKasxnngpRQcJ5ZSYRc1urV2bkQeuo903lvsbDY="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat-new.js.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\t1kd5da0t8-i30svtvrtf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1651"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tDbSIDuC4k8g8o6707iUHh6zCg/V1MwoVPfa4Qsn56E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 22:16:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tDbSIDuC4k8g8o6707iUHh6zCg/V1MwoVPfa4Qsn56E="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat-polling.7m2uevlcfw.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\cwonljnytj-7m2uevlcfw.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000574382539"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1740"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M50Vb1KgW8MiZpLJmGKisIhURAq61HCPLtjLNpIHl4A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 23:05:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"QZ0TPgbEpsS0B+GL0yZOiukgSRf+/joKy3FJf0syCIE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7m2uevlcfw"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chat-polling.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QZ0TPgbEpsS0B+GL0yZOiukgSRf+/joKy3FJf0syCIE="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat-polling.7m2uevlcfw.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat-polling.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QZ0TPgbEpsS0B+GL0yZOiukgSRf+/joKy3FJf0syCIE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 23:05:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7m2uevlcfw"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chat-polling.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QZ0TPgbEpsS0B+GL0yZOiukgSRf+/joKy3FJf0syCIE="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat-polling.7m2uevlcfw.js.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\cwonljnytj-7m2uevlcfw.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M50Vb1KgW8MiZpLJmGKisIhURAq61HCPLtjLNpIHl4A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 23:05:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7m2uevlcfw"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chat-polling.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-M50Vb1KgW8MiZpLJmGKisIhURAq61HCPLtjLNpIHl4A="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat-polling.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\cwonljnytj-7m2uevlcfw.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000574382539"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1740"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M50Vb1KgW8MiZpLJmGKisIhURAq61HCPLtjLNpIHl4A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 23:05:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"QZ0TPgbEpsS0B+GL0yZOiukgSRf+/joKy3FJf0syCIE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QZ0TPgbEpsS0B+GL0yZOiukgSRf+/joKy3FJf0syCIE="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat-polling.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat-polling.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QZ0TPgbEpsS0B+GL0yZOiukgSRf+/joKy3FJf0syCIE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 23:05:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QZ0TPgbEpsS0B+GL0yZOiukgSRf+/joKy3FJf0syCIE="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat-polling.js.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\cwonljnytj-7m2uevlcfw.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M50Vb1KgW8MiZpLJmGKisIhURAq61HCPLtjLNpIHl4A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 23:05:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M50Vb1KgW8MiZpLJmGKisIhURAq61HCPLtjLNpIHl4A="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat.783vty38gy.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\i78m1r5lga-783vty38gy.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000538502962"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1856"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZtqEoXZGnyJR0/21qM/yJHYEMAwF38r4ETO2eb6uFLU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 22:10:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"6ahhNCTs3unHySqfnjoXQ9J/eAG7KMecMMpfKR7+mq0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "783vty38gy"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chat.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6ahhNCTs3unHySqfnjoXQ9J/eAG7KMecMMpfKR7+mq0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat.783vty38gy.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6ahhNCTs3unHySqfnjoXQ9J/eAG7KMecMMpfKR7+mq0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 22:10:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "783vty38gy"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chat.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6ahhNCTs3unHySqfnjoXQ9J/eAG7KMecMMpfKR7+mq0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat.783vty38gy.js.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\i78m1r5lga-783vty38gy.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1856"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZtqEoXZGnyJR0/21qM/yJHYEMAwF38r4ETO2eb6uFLU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 22:10:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "783vty38gy"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chat.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZtqEoXZGnyJR0/21qM/yJHYEMAwF38r4ETO2eb6uFLU="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\i78m1r5lga-783vty38gy.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000538502962"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1856"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZtqEoXZGnyJR0/21qM/yJHYEMAwF38r4ETO2eb6uFLU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 22:10:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"6ahhNCTs3unHySqfnjoXQ9J/eAG7KMecMMpfKR7+mq0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6ahhNCTs3unHySqfnjoXQ9J/eAG7KMecMMpfKR7+mq0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6ahhNCTs3unHySqfnjoXQ9J/eAG7KMecMMpfKR7+mq0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 22:10:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6ahhNCTs3unHySqfnjoXQ9J/eAG7KMecMMpfKR7+mq0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chat.js.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\i78m1r5lga-783vty38gy.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1856"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZtqEoXZGnyJR0/21qM/yJHYEMAwF38r4ETO2eb6uFLU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 22:10:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZtqEoXZGnyJR0/21qM/yJHYEMAwF38r4ETO2eb6uFLU="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\fx9et1lbmm-xtxxf3hu2r.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005263157895"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "189"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:51:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "231"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:51:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\fx9et1lbmm-xtxxf3hu2r.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "189"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:51:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.xtxxf3hu2r.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\fx9et1lbmm-xtxxf3hu2r.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005263157895"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "189"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:51:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xtxxf3hu2r"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.xtxxf3hu2r.js",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "231"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:51:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xtxxf3hu2r"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.xtxxf3hu2r.js.gz",
+      "AssetFile": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\compressed\\fx9et1lbmm-xtxxf3hu2r.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "189"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 20:51:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xtxxf3hu2r"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA="
+        }
+      ]
+    }
+  ]
+}

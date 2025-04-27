@@ -6,6 +6,16 @@
 *.userosscache
 *.sln.docstates
 *.userprefs
+*.swp
+*.dll
+*.exe
+*.pdb
+*.dll.config
+*.cache
+*.psess
+*.vsp
+*.vspx
+*.sap
 
 # Build results
 [Dd]ebug/
@@ -19,6 +29,7 @@ x86/
 bld/
 [Bb]in/
 [Oo]bj/
+[Oo]ut/
 [Ll]og/
 [Ll]ogs/
 
@@ -357,3 +368,30 @@ FodyWeavers.xsd
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Build logs
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Sensitive configuration files
+**/appsettings.Development.json
+**/appsettings.Production.json
+**/appsettings.Staging.json
+**/appsettings.Local.json
+**/secrets.json
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Node.js logs
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# Misc
+Thumbs.db

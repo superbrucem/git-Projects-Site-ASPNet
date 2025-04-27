@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AISite.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AISite.r6pdwpwznz.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat-new.js",
+      "PackagePath": "staticwebassets\\js\\chat-new.js"
+    },
+    {
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat-polling.js",
+      "PackagePath": "staticwebassets\\js\\chat-polling.js"
+    },
+    {
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat.js",
+      "PackagePath": "staticwebassets\\js\\chat.js"
+    },
+    {
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.AISite.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.AISite.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.AISite.props",
+      "PackagePath": "build\\AISite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.AISite.props",
+      "PackagePath": "buildMultiTargeting\\AISite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.AISite.props",
+      "PackagePath": "buildTransitive\\AISite.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
