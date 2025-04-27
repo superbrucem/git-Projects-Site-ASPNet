@@ -114,7 +114,7 @@ namespace OttawaOpalShop.Controllers
         }
 
         [HttpPost]
-        public IActionResult ProcessPayment(string FirstName, string LastName, string Email, string Phone, string PaymentMethod)
+        public IActionResult ProcessPayment(string FirstName, string LastName, string Email, string Phone, string PaymentMethod, string TransactionId = null)
         {
             var cart = _cartService.GetCart();
 
@@ -135,6 +135,11 @@ namespace OttawaOpalShop.Controllers
             _logger.LogInformation($"Payment method: {PaymentMethod}");
             _logger.LogInformation($"Order total: ${cart.Total}");
 
+            if (!string.IsNullOrEmpty(TransactionId))
+            {
+                _logger.LogInformation($"PayPal Transaction ID: {TransactionId}");
+            }
+
             // Generate a unique order ID
             string orderId = $"OOS-{DateTime.Now:yyyyMMdd}-{Guid.NewGuid().ToString().Substring(0, 8)}";
             _logger.LogInformation($"Generated order ID: {orderId}");
@@ -148,6 +153,9 @@ namespace OttawaOpalShop.Controllers
                     // In a real app, you would update the database
                     // For now, we're just simulating the stock reduction
                     _logger.LogInformation($"Reducing stock for product {product.Id} from {product.StockQuantity} to {product.StockQuantity - item.Quantity}");
+
+                    // Update the product stock quantity
+                    _productService.UpdateProductStock(product.Id, product.StockQuantity - item.Quantity);
                 }
             }
 
@@ -160,12 +168,11 @@ namespace OttawaOpalShop.Controllers
             TempData["CustomerName"] = $"{FirstName} {LastName}";
             TempData["CustomerEmail"] = Email;
 
-            // Redirect to PayPal for payment
-            if (PaymentMethod == "PayPal")
+            // Add PayPal transaction information if available
+            if (PaymentMethod == "PayPal" && !string.IsNullOrEmpty(TransactionId))
             {
-                // In a real application, we would redirect to PayPal here
-                // For now, we'll just simulate a successful PayPal payment
                 TempData["PayPalMessage"] = "Your PayPal payment has been processed successfully.";
+                TempData["TransactionId"] = TransactionId;
             }
 
             return RedirectToAction("OrderConfirmation");

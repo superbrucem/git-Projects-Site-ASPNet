@@ -19,6 +19,12 @@
         {
             <div class="alert alert-info">
                 @TempData["PayPalMessage"]
+                @if (TempData["TransactionId"] != null)
+                {
+                    <div class="mt-2">
+                        <small>Transaction ID: @TempData["TransactionId"]</small>
+                    </div>
+                }
             </div>
         }
 

@@ -316,6 +316,16 @@ namespace OttawaOpalShop.Services
             ).ToList();
         }
 
+        public void UpdateProductStock(int productId, int newStockQuantity)
+        {
+            var product = GetProductById(productId);
+            if (product != null)
+            {
+                // Ensure stock doesn't go below 0
+                product.StockQuantity = Math.Max(0, newStockQuantity);
+            }
+        }
+
         public ProductViewModel GetProductViewModel(string category, int page = 1, int itemsPerPage = 8, string searchQuery = null)
         {
             // Default to page 1 if invalid
