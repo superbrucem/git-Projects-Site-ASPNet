@@ -1,0 +1,104 @@
+@model OttawaOpalShop.Models.ShoppingCart
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<div class="container cart-page-container">
+    <h1 class="mb-4">CHECKOUT</h1>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">ORDER SUMMARY</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>PRODUCT</th>
+                                    <th>PRICE</th>
+                                    <th>QUANTITY</th>
+                                    <th>TOTAL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Items)
+                                {
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="@item.ImageColor me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                                                    <span class="@(item.IsDarkText ? "text-dark" : "text-white")" style="font-size: 0.7rem;">@item.ImageText</span>
+                                                </div>
+                                                <div>@item.ProductName</div>
+                                            </div>
+                                        </td>
+                                        <td>$@item.Price.ToString("0.00")</td>
+                                        <td>@item.Quantity</td>
+                                        <td>$@item.Total.ToString("0.00")</td>
+                                    </tr>
+                                }
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3" class="text-end"><strong>SUBTOTAL:</strong></td>
+                                    <td><strong>$@Model.Total.ToString("0.00")</strong></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="text-end"><strong>SHIPPING:</strong></td>
+                                    <td><strong>FREE</strong></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="text-end"><strong>TOTAL:</strong></td>
+                                    <td><strong id="order-total">$@Model.Total.ToString("0.00")</strong></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">PAYMENT</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-4">
+                        <h6>PAYMENT METHOD</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" checked>
+                            <label class="form-check-label" for="paypal">
+                                <i class="fab fa-paypal me-2"></i> PayPal
+                            </label>
+                        </div>
+                    </div>
+
+                    <div id="paypal-button-container" class="mb-3"></div>
+
+                    <div class="d-grid gap-2">
+                        <a asp-action="Index" class="btn btn-outline-secondary">BACK TO CART</a>
+                        <form asp-action="ProcessPayment" method="post" id="checkout-form">
+                            <button type="submit" class="btn btn-primary w-100 place-order-btn">PLACE ORDER</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+}

@@ -1,0 +1,229 @@
+@model OttawaOpalShop.Models.ProductViewModel
+@{
+    string GetPageUrl(int page)
+    {
+        var queryParams = new Dictionary<string, string>
+        {
+            { "page", page.ToString() },
+            { "category", Model.CategoryName ?? "" }
+        };
+
+        if (!string.IsNullOrEmpty(Model.SearchQuery))
+        {
+            queryParams["search"] = Model.SearchQuery;
+        }
+
+        if (!string.IsNullOrEmpty(Context.Request.Query["sort"]))
+        {
+            queryParams["sort"] = Context.Request.Query["sort"];
+        }
+
+        if (!string.IsNullOrEmpty(Context.Request.Query["columns"]))
+        {
+            queryParams["columns"] = Context.Request.Query["columns"];
+        }
+
+        if (!string.IsNullOrEmpty(Context.Request.Query["perPage"]))
+        {
+            queryParams["perPage"] = Context.Request.Query["perPage"];
+        }
+
+        return "?" + string.Join("&", queryParams.Select(p => $"{p.Key}={p.Value}"));
+    }
+}
+
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="d-flex align-items-center">
+            <span class="me-2">SORT BY:</span>
+            <select id="sort-select" class="form-select" style="width: auto;" onchange="applyFilters()">
+                @{
+                    var currentSort = Context.Request.Query["sort"].ToString();
+                    var isDefaultSort = string.IsNullOrEmpty(currentSort) || currentSort == "featured";
+                }
+                <option value="featured" selected="@isDefaultSort">FEATURED ITEMS</option>
+                <option value="price-asc" selected="@(currentSort == "price-asc")">PRICE: LOW TO HIGH</option>
+                <option value="price-desc" selected="@(currentSort == "price-desc")">PRICE: HIGH TO LOW</option>
+                <option value="newest" selected="@(currentSort == "newest")">NEWEST ARRIVALS</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="d-flex justify-content-md-end align-items-center">
+            <span class="me-2">COLUMNS:</span>
+            <div class="btn-group me-3" role="group">
+                @{
+                    var currentColumns = Context.Request.Query["columns"].ToString();
+                    var isDefaultColumns = string.IsNullOrEmpty(currentColumns) || currentColumns == "4";
+                }
+                <button type="button" class="btn btn-outline-secondary column-btn @(currentColumns == "1" ? "active" : "")" data-columns="1" onclick="setColumns(1)">1</button>
+                <button type="button" class="btn btn-outline-secondary column-btn @(currentColumns == "2" ? "active" : "")" data-columns="2" onclick="setColumns(2)">2</button>
+                <button type="button" class="btn btn-outline-secondary column-btn @(currentColumns == "3" ? "active" : "")" data-columns="3" onclick="setColumns(3)">3</button>
+                <button type="button" class="btn btn-outline-secondary column-btn @(isDefaultColumns ? "active" : "")" data-columns="4" onclick="setColumns(4)">4</button>
+                <button type="button" class="btn btn-outline-secondary column-btn @(currentColumns == "6" ? "active" : "")" data-columns="6" onclick="setColumns(6)">6</button>
+            </div>
+            <span class="me-2">PRODUCTS PER PAGE:</span>
+            <select id="per-page-select" class="form-select" style="width: auto;" onchange="applyFilters()">
+                @{
+                    var currentPerPage = Context.Request.Query["perPage"].ToString();
+                    var isDefaultPerPage = string.IsNullOrEmpty(currentPerPage) || currentPerPage == "8";
+                }
+                <option value="8" selected="@isDefaultPerPage">8</option>
+                <option value="16" selected="@(currentPerPage == "16")">16</option>
+                <option value="24" selected="@(currentPerPage == "24")">24</option>
+                <option value="32" selected="@(currentPerPage == "32")">32</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    @foreach (var product in Model.Products)
+    {
+        <partial name="_ProductCard" model="product" />
+    }
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>ITEMS @(((Model.CurrentPage - 1) * Model.ItemsPerPage) + 1) TO @Math.Min(Model.CurrentPage * Model.ItemsPerPage, Model.TotalItems) OF @Model.TotalItems TOTAL</div>
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    @{
+                        // Show only a limited number of page links
+                        const int maxVisiblePages = 5;
+                        int startPage = Math.Max(1, Model.CurrentPage - 2);
+                        int endPage = Math.Min(Model.TotalPages, startPage + maxVisiblePages - 1);
+
+                        if (endPage - startPage + 1 < maxVisiblePages)
+                        {
+                            startPage = Math.Max(1, endPage - maxVisiblePages + 1);
+                        }
+                    }
+
+                    @for (int i = startPage; i <= endPage; i++)
+                    {
+                        <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                            <a class="page-link" href="@GetPageUrl(i)">@i</a>
+                        </li>
+                    }
+
+                    @if (Model.CurrentPage < Model.TotalPages)
+                    {
+                        <li class="page-item">
+                            <a class="page-link next-page" href="@GetPageUrl(Model.CurrentPage + 1)">NEXT</a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function applyFilters() {
+            const sortValue = document.getElementById('sort-select').value;
+            const perPageValue = document.getElementById('per-page-select').value;
+            const columnsValue = document.querySelector('.column-btn.active').getAttribute('data-columns');
+
+            let url = new URL(window.location.href);
+            let params = new URLSearchParams(url.search);
+
+            // Update or add parameters
+            params.set('sort', sortValue);
+            params.set('perPage', perPageValue);
+            params.set('columns', columnsValue);
+
+            // Reset to page 1 when filters change
+            params.set('page', '1');
+
+            // Preserve category and search parameters
+            if (!params.has('category') && '@Model.CategoryName' !== '') {
+                params.set('category', '@Model.CategoryName');
+            }
+
+            if (!params.has('search') && '@Model.SearchQuery' !== '') {
+                params.set('search', '@Model.SearchQuery');
+            }
+
+            // Redirect to the new URL
+            window.location.href = url.pathname + '?' + params.toString();
+        }
+
+        function setColumns(columns) {
+            // Update active state on buttons
+            document.querySelectorAll('.column-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            document.querySelector(`.column-btn[data-columns="${columns}"]`).classList.add('active');
+
+            // Update product card classes based on columns
+            const productCards = document.querySelectorAll('.product-card-container');
+            productCards.forEach(card => {
+                // Remove existing column classes
+                card.classList.remove('col-md-12', 'col-md-6', 'col-md-4', 'col-md-3', 'col-md-2');
+
+                // Add appropriate column class
+                switch(columns) {
+                    case 1:
+                        card.classList.add('col-md-12');
+                        break;
+                    case 2:
+                        card.classList.add('col-md-6');
+                        break;
+                    case 3:
+                        card.classList.add('col-md-4');
+                        break;
+                    case 4:
+                        card.classList.add('col-md-3');
+                        break;
+                    case 6:
+                        card.classList.add('col-md-2');
+                        break;
+                }
+            });
+
+            // Apply filters to update URL
+            applyFilters();
+        }
+
+        // Initialize column layout based on URL parameter
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const columns = urlParams.get('columns') || '4'; // Default to 4 columns
+
+            // Update product card classes
+            const productCards = document.querySelectorAll('.col-md-3.col-lg-3.mb-4');
+            productCards.forEach(card => {
+                card.classList.add('product-card-container');
+
+                // Remove existing column classes
+                card.classList.remove('col-md-12', 'col-md-6', 'col-md-4', 'col-md-3', 'col-md-2');
+
+                // Add appropriate column class
+                switch(columns) {
+                    case '1':
+                        card.classList.add('col-md-12');
+                        break;
+                    case '2':
+                        card.classList.add('col-md-6');
+                        break;
+                    case '3':
+                        card.classList.add('col-md-4');
+                        break;
+                    case '4':
+                        card.classList.add('col-md-3');
+                        break;
+                    case '6':
+                        card.classList.add('col-md-2');
+                        break;
+                    default:
+                        card.classList.add('col-md-3');
+                }
+            });
+        });
+    </script>
+}

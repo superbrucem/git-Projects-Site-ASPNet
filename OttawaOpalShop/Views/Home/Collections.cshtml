@@ -1,0 +1,14 @@
+@model OttawaOpalShop.Models.ProductViewModel
+@{
+    ViewData["Title"] = "Collections";
+    var breadcrumbItems = new List<(string Text, string Url)>
+    {
+        ("COLLECTIONS", Url.Action("Collections", "Home"))
+    };
+}
+
+<div class="container-fluid">
+    <partial name="_Breadcrumb" model="breadcrumbItems" />
+    <h1 class="mb-4">COLLECTIONS</h1>
+    <partial name="_ProductGrid" model="Model" />
+</div>

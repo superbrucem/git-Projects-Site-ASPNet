@@ -1,0 +1,14 @@
+@model OttawaOpalShop.Models.ProductViewModel
+@{
+    ViewData["Title"] = "Signature";
+    var breadcrumbItems = new List<(string Text, string Url)>
+    {
+        ("SIGNATURE", Url.Action("Signature", "Home"))
+    };
+}
+
+<div class="container-fluid">
+    <partial name="_Breadcrumb" model="breadcrumbItems" />
+    <h1 class="mb-4">SIGNATURE COLLECTION</h1>
+    <partial name="_ProductGrid" model="Model" />
+</div>
