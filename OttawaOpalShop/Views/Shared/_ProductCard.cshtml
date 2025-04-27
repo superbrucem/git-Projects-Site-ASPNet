@@ -23,6 +23,7 @@
 
                 <form asp-controller="Cart" asp-action="AddToCart" method="post" class="d-grid">
                     <input type="hidden" name="productId" value="@Model.Id" />
+                    <input type="hidden" name="returnUrl" value="@Context.Request.Path@Context.Request.QueryString" />
                     <div class="mb-3 d-flex justify-content-center">
                         <div class="quantity-selector-container">
                             <label class="quantity-label mb-1">QUANTITY:</label>

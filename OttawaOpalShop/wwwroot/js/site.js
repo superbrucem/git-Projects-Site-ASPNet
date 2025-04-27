@@ -102,14 +102,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize PayPal button if we're on the checkout page
     if (document.getElementById('paypal-button-container')) {
-        initPayPalButton();
+        console.log('PayPal button container found, initializing...');
+        // Add a slight delay to ensure PayPal SDK is loaded
+        setTimeout(function() {
+            console.log('Attempting to initialize PayPal button...');
+            initPayPalButton();
+        }, 1000);
     }
 });
 
 // PayPal integration
 function initPayPalButton() {
-    if (typeof paypal !== 'undefined') {
-        paypal.Buttons({
+    console.log('initPayPalButton called');
+
+    if (typeof paypal === 'undefined') {
+        console.error('PayPal SDK not loaded!');
+        const container = document.getElementById('paypal-button-container');
+        if (container) {
+            container.innerHTML = '<div class="alert alert-danger">PayPal payment system is currently unavailable. Please try again later.</div>';
+        }
+        return;
+    }
+
+    console.log('PayPal SDK loaded, creating buttons...');
+    paypal.Buttons({
             style: {
                 shape: 'rect',
                 color: 'gold',
@@ -125,19 +141,48 @@ function initPayPalButton() {
                         amount: {
                             currency_code: 'USD',
                             value: total
-                        }
+                        },
+                        description: 'Ottawa Opal Shop Purchase'
                     }]
                 });
             },
             onApprove: function(data, actions) {
+                // Show a loading message
+                const paypalContainer = document.getElementById('paypal-button-container');
+                const loadingMessage = document.createElement('div');
+                loadingMessage.className = 'alert alert-info text-center';
+                loadingMessage.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Processing your payment...';
+                paypalContainer.appendChild(loadingMessage);
+
                 return actions.order.capture().then(function(orderData) {
+                    console.log('PayPal Capture Result:', orderData);
+
+                    // Create a hidden input for the PayPal order ID
+                    const paypalOrderIdInput = document.createElement('input');
+                    paypalOrderIdInput.type = 'hidden';
+                    paypalOrderIdInput.name = 'paypalOrderId';
+                    paypalOrderIdInput.value = orderData.id;
+
+                    // Add the input to the form
+                    const form = document.getElementById('checkout-form');
+                    form.appendChild(paypalOrderIdInput);
+
+                    // Update the loading message
+                    loadingMessage.innerHTML = '<i class="fas fa-check-circle me-2"></i> Payment successful! Completing your order...';
+
                     // Submit the form to process the payment on the server
-                    document.getElementById('checkout-form').submit();
+                    setTimeout(() => {
+                        form.submit();
+                    }, 1500);
                 });
             },
+            onCancel: function(data) {
+                console.log('PayPal payment cancelled:', data);
+                alert('You have cancelled the PayPal payment. Your order has not been processed.');
+            },
             onError: function(err) {
-                console.log(err);
-                alert('There was an error processing your payment. Please try again.');
+                console.error('PayPal Error:', err);
+                alert('There was an error processing your payment. Please try again or contact customer support.');
             }
         }).render('#paypal-button-container');
     }

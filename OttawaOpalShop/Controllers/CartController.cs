@@ -9,11 +9,13 @@ namespace OttawaOpalShop.Controllers
     {
         private readonly ShoppingCartService _cartService;
         private readonly ProductService _productService;
+        private readonly ILogger<CartController> _logger;
 
-        public CartController(ShoppingCartService cartService, ProductService productService)
+        public CartController(ShoppingCartService cartService, ProductService productService, ILogger<CartController> logger)
         {
             _cartService = cartService;
             _productService = productService;
+            _logger = logger;
         }
 
         public IActionResult Index()
@@ -23,7 +25,7 @@ namespace OttawaOpalShop.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddToCart(int productId, int quantity = 1)
+        public IActionResult AddToCart(int productId, int quantity = 1, string returnUrl = null)
         {
             try
             {
@@ -35,6 +37,20 @@ namespace OttawaOpalShop.Controllers
                 TempData["ErrorMessage"] = ex.Message;
             }
 
+            // If returnUrl is provided, use it
+            if (!string.IsNullOrEmpty(returnUrl))
+            {
+                return Redirect(returnUrl);
+            }
+
+            // Otherwise, try to get the referring URL
+            string referer = Request.Headers["Referer"].ToString();
+            if (!string.IsNullOrEmpty(referer))
+            {
+                return Redirect(referer);
+            }
+
+            // Fallback to Home/Index if no referrer is available
             return RedirectToAction("Index", "Home");
         }
 
@@ -81,7 +97,7 @@ namespace OttawaOpalShop.Controllers
         public IActionResult Checkout()
         {
             var cart = _cartService.GetCart();
-            
+
             if (cart.IsEmpty)
             {
                 TempData["ErrorMessage"] = "Your cart is empty.";
@@ -98,13 +114,10 @@ namespace OttawaOpalShop.Controllers
         }
 
         [HttpPost]
-        public IActionResult ProcessPayment()
+        public IActionResult ProcessPayment(string FirstName, string LastName, string Email, string Phone, string PaymentMethod)
         {
-            // This would normally handle the payment processing
-            // For now, we'll just clear the cart and show a success message
-            
             var cart = _cartService.GetCart();
-            
+
             if (cart.IsEmpty)
             {
                 TempData["ErrorMessage"] = "Your cart is empty.";
@@ -117,10 +130,44 @@ namespace OttawaOpalShop.Controllers
                 return RedirectToAction("Index");
             }
 
-            // Process the order (in a real app, this would update inventory, create an order record, etc.)
+            // Log customer information
+            _logger.LogInformation($"Order placed by {FirstName} {LastName} ({Email})");
+            _logger.LogInformation($"Payment method: {PaymentMethod}");
+            _logger.LogInformation($"Order total: ${cart.Total}");
+
+            // Generate a unique order ID
+            string orderId = $"OOS-{DateTime.Now:yyyyMMdd}-{Guid.NewGuid().ToString().Substring(0, 8)}";
+            _logger.LogInformation($"Generated order ID: {orderId}");
+
+            // Update inventory (reduce stock quantities)
+            foreach (var item in cart.Items)
+            {
+                var product = _productService.GetProductById(item.ProductId);
+                if (product != null)
+                {
+                    // In a real app, you would update the database
+                    // For now, we're just simulating the stock reduction
+                    _logger.LogInformation($"Reducing stock for product {product.Id} from {product.StockQuantity} to {product.StockQuantity - item.Quantity}");
+                }
+            }
+
+            // Clear the cart after successful order placement
             _cartService.ClearCart();
-            
+
+            // Store order information in TempData
             TempData["SuccessMessage"] = "Your order has been placed successfully!";
+            TempData["OrderId"] = orderId;
+            TempData["CustomerName"] = $"{FirstName} {LastName}";
+            TempData["CustomerEmail"] = Email;
+
+            // Redirect to PayPal for payment
+            if (PaymentMethod == "PayPal")
+            {
+                // In a real application, we would redirect to PayPal here
+                // For now, we'll just simulate a successful PayPal payment
+                TempData["PayPalMessage"] = "Your PayPal payment has been processed successfully.";
+            }
+
             return RedirectToAction("OrderConfirmation");
         }
 
