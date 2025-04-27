@@ -78,10 +78,13 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .search-box .input-group {
   width: 100%;
+  max-width: 300px;
   display: flex;
 }
 
@@ -93,6 +96,7 @@ body {
   background-color: #fff;
   color: #333;
   font-size: 0.9rem;
+  letter-spacing: 0.12em;
 }
 
 .btn-search {
@@ -158,13 +162,15 @@ body {
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   border: 1px solid #e0e0e0;
+  width: 100%;
+  margin-right: 15px;
 }
 
 .sidebar-section {
   border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .sidebar-header {
@@ -178,18 +184,18 @@ body {
 
 .sidebar-header h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
   color: #333;
 }
 
 .sidebar-content {
-  padding: 5px 0;
+  padding: 3px 0;
 }
 
 .sidebar-section.mt-4 {
-  margin-top: 1rem !important;
+  margin-top: 0.75rem !important;
 }
 
 .sidebar-list {
@@ -200,7 +206,7 @@ body {
 
 .sidebar-list li {
   border-bottom: 1px solid #f0f0f0;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .sidebar-list li:last-child {
@@ -214,7 +220,7 @@ body {
   text-decoration: none;
   transition: all 0.3s;
   font-size: 13px;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
@@ -223,21 +229,21 @@ body {
 
 .sidebar-list li a:hover {
   background-color: #f5f5f5;
-  padding-left: 12px;
+  padding-left: 10px;
   color: #3f51b5;
 }
 
 .sidebar-list li a.text-primary {
   color: #3f51b5 !important;
   font-weight: 600;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.1em;
   background-color: rgba(63, 81, 181, 0.05);
 }
 
 /* Main Content */
 .container, .container-fluid {
-  max-width: 1400px;
-  width: 90%;
+  max-width: 1600px;
+  width: 95%;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
@@ -269,6 +275,24 @@ main[role="main"] {
   overflow: hidden;
   border: none;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card > .card-body {
+  padding: 2rem;
+}
+
+.card .display-4 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  margin-bottom: 1.5rem;
+}
+
+.card .lead {
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
 .card-title {
@@ -334,16 +358,20 @@ main[role="main"] {
 .breadcrumb {
   background-color: transparent;
   padding: 0.5rem 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .breadcrumb-item a {
   color: #3f51b5;
   text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.12em;
 }
 
 .breadcrumb-item.active {
   color: #666;
+  font-weight: 600;
+  letter-spacing: 0.12em;
 }
 
 .pagination .page-link {
@@ -358,11 +386,11 @@ main[role="main"] {
 
 /* Stretched out fonts */
 body {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
 }
 
 h1, h2, h3, h4, h5, h6, .card-title, .btn, .nav-menu li a {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
 }
 
 /* Footer */
@@ -513,23 +541,25 @@ h1, h2, h3, h4, h5, h6, .card-title, .btn, .nav-menu li a {
 
 /* Add to Cart button styling */
 .add-to-cart-btn {
-  background-color: #6a1b9a;
-  border-color: #6a1b9a;
+  background-color: #e53935;
+  border-color: #e53935;
   color: white;
   font-weight: bold;
-  padding: 8px 12px;
+  padding: 10px 15px;
   width: 100%;
   border-radius: 0;
+  margin-top: 10px;
+  letter-spacing: 0.15em;
 }
 
 .add-to-cart-btn:hover {
-  background-color: #4a148c;
-  border-color: #4a148c;
+  background-color: #c62828;
+  border-color: #c62828;
 }
 
 .add-to-cart-btn:disabled {
-  background-color: #d1c4e9;
-  border-color: #d1c4e9;
+  background-color: #ffcdd2;
+  border-color: #ffcdd2;
 }
 
 /* Stock badge styling */
@@ -634,9 +664,9 @@ h1, h2, h3, h4, h5, h6, .card-title, .btn, .nav-menu li a {
   background-color: #f5f5f5;
   padding: 12px 20px;
   border-radius: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 14px;
-  letter-spacing: 1px;
+  letter-spacing: 0.15em;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -684,11 +714,23 @@ h1, h2, h3, h4, h5, h6, .card-title, .btn, .nav-menu li a {
   border: none;
   border-radius: 8px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.welcome-card h1 {
+.welcome-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-card h1, .welcome-card h2 {
   color: #3f51b5;
-  font-weight: 300;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+
+.welcome-card p {
+  letter-spacing: 0.15em;
+  line-height: 1.6;
 }
 
 .welcome-card hr {
