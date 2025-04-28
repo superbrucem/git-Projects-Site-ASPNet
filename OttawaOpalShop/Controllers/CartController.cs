@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using OttawaOpalShop.Models;
 using OttawaOpalShop.Services;
@@ -10,12 +11,14 @@ namespace OttawaOpalShop.Controllers
         private readonly ShoppingCartService _cartService;
         private readonly ProductService _productService;
         private readonly ILogger<CartController> _logger;
+        private readonly PayPalService _paypalService;
 
-        public CartController(ShoppingCartService cartService, ProductService productService, ILogger<CartController> logger)
+        public CartController(ShoppingCartService cartService, ProductService productService, ILogger<CartController> logger, PayPalService paypalService)
         {
             _cartService = cartService;
             _productService = productService;
             _logger = logger;
+            _paypalService = paypalService;
         }
 
         public IActionResult Index()
@@ -114,7 +117,7 @@ namespace OttawaOpalShop.Controllers
         }
 
         [HttpPost]
-        public IActionResult ProcessPayment(string FirstName, string LastName, string Email, string Phone, string PaymentMethod, string TransactionId = null)
+        public async Task<IActionResult> ProcessPayment(string FirstName, string LastName, string Email, string Phone, string PaymentMethod, string TransactionId = null)
         {
             var cart = _cartService.GetCart();
 
@@ -179,16 +182,27 @@ namespace OttawaOpalShop.Controllers
             }
             else
             {
-                // Redirect to PayPal for payment
-                // For demo purposes, we'll redirect to a simulated PayPal page
-                return RedirectToAction("PayPalCheckout");
-            }
-        }
+                try
+                {
+                    // Create a PayPal order
+                    string paypalOrderId = await _paypalService.CreateOrderAsync(cart.Total);
 
-        public IActionResult PayPalCheckout()
-        {
-            var cart = _cartService.GetCart();
-            return View(cart);
+                    // Store the PayPal order ID in TempData
+                    TempData["PayPalOrderId"] = paypalOrderId;
+
+                    // Get the approval URL
+                    string approvalUrl = await _paypalService.GetApprovalUrlAsync(paypalOrderId);
+
+                    // Redirect to PayPal for payment
+                    return Redirect(approvalUrl);
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Failed to create PayPal order");
+                    TempData["ErrorMessage"] = "There was an error processing your PayPal payment. Please try again.";
+                    return RedirectToAction("Checkout");
+                }
+            }
         }
 
         public IActionResult OrderConfirmation()
@@ -196,20 +210,42 @@ namespace OttawaOpalShop.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult CompletePayPalPayment()
+        public async Task<IActionResult> CapturePayment(string token)
         {
-            // Retrieve customer information from TempData
-            string firstName = TempData["CustomerFirstName"]?.ToString() ?? "";
-            string lastName = TempData["CustomerLastName"]?.ToString() ?? "";
-            string email = TempData["CustomerEmail"]?.ToString() ?? "";
-            string phone = TempData["CustomerPhone"]?.ToString() ?? "";
+            try
+            {
+                // Capture the payment
+                bool success = await _paypalService.CaptureOrderAsync(token);
 
-            // Generate a mock transaction ID
-            string transactionId = $"PAYPAL-{Guid.NewGuid().ToString().Substring(0, 12)}";
+                if (success)
+                {
+                    // Retrieve customer information from TempData
+                    string firstName = TempData["CustomerFirstName"]?.ToString() ?? "";
+                    string lastName = TempData["CustomerLastName"]?.ToString() ?? "";
+                    string email = TempData["CustomerEmail"]?.ToString() ?? "";
+                    string phone = TempData["CustomerPhone"]?.ToString() ?? "";
 
-            // Process the payment with the retrieved information
-            return ProcessPayment(firstName, lastName, email, phone, "PayPal", transactionId);
+                    // Process the payment with the PayPal order ID as the transaction ID
+                    return await ProcessPayment(firstName, lastName, email, phone, "PayPal", token);
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = "PayPal payment was not completed successfully.";
+                    return RedirectToAction("Checkout");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Failed to capture PayPal payment");
+                TempData["ErrorMessage"] = "There was an error processing your PayPal payment. Please try again.";
+                return RedirectToAction("Checkout");
+            }
+        }
+
+        public IActionResult CancelPayment()
+        {
+            TempData["ErrorMessage"] = "PayPal payment was cancelled.";
+            return RedirectToAction("Checkout");
         }
     }
 }
