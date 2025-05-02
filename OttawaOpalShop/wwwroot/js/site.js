@@ -10,20 +10,62 @@ document.addEventListener('DOMContentLoaded', function() {
     sidebarHeaders.forEach(header => {
         header.addEventListener('click', function() {
             const content = this.nextElementSibling;
-            const icon = this.querySelector('i');
 
             // Toggle content visibility
             if (content.style.display === 'none') {
                 content.style.display = 'block';
-                icon.classList.remove('fa-chevron-down');
-                icon.classList.add('fa-chevron-up');
             } else {
                 content.style.display = 'none';
-                icon.classList.remove('fa-chevron-up');
-                icon.classList.add('fa-chevron-down');
             }
         });
     });
+
+    // Initialize submenu functionality
+    const hasSubmenuItems = document.querySelectorAll('.has-submenu > a');
+
+    // Handle window resize to adjust menu behavior
+    function handleMenuBehavior() {
+        // For mobile devices, we need to handle click events to show/hide submenus
+        if (window.innerWidth < 992) {
+            hasSubmenuItems.forEach(item => {
+                // Remove any existing event listeners first
+                item.removeEventListener('click', mobileMenuHandler);
+                // Add the mobile click handler
+                item.addEventListener('click', mobileMenuHandler);
+            });
+        } else {
+            // For desktop, remove click handlers (will use CSS hover instead)
+            hasSubmenuItems.forEach(item => {
+                item.removeEventListener('click', mobileMenuHandler);
+            });
+        }
+    }
+
+    // Mobile menu click handler
+    function mobileMenuHandler(e) {
+        // Only prevent default if this is a parent menu item
+        if (this.parentElement.classList.contains('has-submenu')) {
+            e.preventDefault();
+            const submenu = this.nextElementSibling;
+
+            // Toggle submenu visibility
+            if (submenu.style.display === 'block') {
+                submenu.style.display = 'none';
+            } else {
+                // Hide all other submenus first
+                document.querySelectorAll('.submenu').forEach(menu => {
+                    menu.style.display = 'none';
+                });
+                submenu.style.display = 'block';
+            }
+        }
+    }
+
+    // Initialize menu behavior
+    handleMenuBehavior();
+
+    // Update menu behavior on window resize
+    window.addEventListener('resize', handleMenuBehavior);
 
     // Add ripple effect to buttons
     const buttons = document.querySelectorAll('.btn');

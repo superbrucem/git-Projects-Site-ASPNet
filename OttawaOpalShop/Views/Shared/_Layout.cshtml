@@ -99,36 +99,62 @@
                 <div class="sidebar-container">
                     <div class="sidebar-section">
                         <div class="sidebar-header">
-                            <h3>Collections</h3>
-                            <i class="fas fa-chevron-up"></i>
+                            <h3>COLLECTIONS</h3>
                         </div>
                         <div class="sidebar-content">
                             <ul class="sidebar-list">
-                                <li><a asp-controller="Home" asp-action="Collections" class="text-primary">ALL COLLECTIONS</a></li>
-                                <li><a asp-controller="Home" asp-action="Collections" asp-route-category="Collections">NATURAL GEMSTONE A-M</a></li>
-                                <li><a asp-controller="Home" asp-action="Collections" asp-route-category="Collections">NATURAL GEMSTONE N-Z</a></li>
-                                <li><a asp-controller="Home" asp-action="Collections" asp-route-category="Collections">NATURAL GARNET</a></li>
-                                <li><a asp-controller="Home" asp-action="Collections" asp-route-category="Collections">NATURAL SAPPHIRE</a></li>
-                                <li><a asp-controller="Home" asp-action="Collections" asp-route-category="Collections">NATURAL TOPAZ - QUARTZ</a></li>
-                                <li><a asp-controller="Home" asp-action="Collections" asp-route-category="Collections">NATURAL DIAMOND</a></li>
+
+                                <li class="has-submenu">
+                                    <a href="#">NATURAL GEMSTONE A-M</a>
+                                    <ul class="submenu">
+                                        <li><a asp-controller="Home" asp-action="Collections" asp-route-category="Collections" asp-route-subcategory="Quartz-Lemon">LEMON</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#">NATURAL GEMSTONE N-Z</a>
+                                    <ul class="submenu">
+                                        <li><a asp-controller="Home" asp-action="Collections" asp-route-category="Collections" asp-route-subcategory="Quartz-Lemon">LEMON</a></li>
+                                    </ul>
+                                </li>
+                              <li class="has-submenu">
+                                    <a href="#">NATURAL GARNET</a>
+                                    <ul class="submenu">
+                                        <li><a asp-controller="Home" asp-action="Collections" asp-route-category="Collections" asp-route-subcategory="Quartz-Lemon">LEMON</a></li>
+                                    </ul>
+                                </li>
+              <li class="has-submenu">
+                                    <a href="#">NATURAL SAPPHIRE</a>
+                                    <ul class="submenu">
+                                        <li><a asp-controller="Home" asp-action="Collections" asp-route-category="Collections" asp-route-subcategory="Quartz-Lemon">LEMON</a></li>
+                                    </ul>
+                                </li>
+<li class="has-submenu">
+                                    <a href="#">NATURAL TOPAZ - QUARTZ</a>
+                                    <ul class="submenu">
+                                        <li><a asp-controller="Home" asp-action="Collections" asp-route-category="Collections" asp-route-subcategory="Quartz-Lemon">LEMON</a></li>
+                                    </ul>
+                                </li>
+<li class="has-submenu">
+                                    <a href="#">NATURAL DIAMOND</a>
+                                    <ul class="submenu">
+                                        <li><a asp-controller="Home" asp-action="Collections" asp-route-category="Collections" asp-route-subcategory="Quartz-Lemon">LEMON</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">SIGNATURE</a>
+                                    <ul class="submenu">
+                                        <li><a asp-controller="Home" asp-action="Signature" asp-route-category="Signature" asp-route-subcategory="5Elements">5 ELEMENTS</a></li>
+                                        <li><a asp-controller="Home" asp-action="Signature" asp-route-category="Signature" asp-route-subcategory="GreekGods">GREEK GODS</a></li>
+                                        <li><a asp-controller="Home" asp-action="Signature" asp-route-category="Signature" asp-route-subcategory="Underworld">UNDERWORLD</a></li>
+                                    </ul>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
 
-                    <div class="sidebar-section mt-4">
-                        <div class="sidebar-header">
-                            <h3>Signature</h3>
-                            <i class="fas fa-chevron-up"></i>
-                        </div>
-                        <div class="sidebar-content">
-                            <ul class="sidebar-list">
-                                <li><a asp-controller="Home" asp-action="Signature" class="text-primary">ALL SIGNATURE</a></li>
-                                <li><a asp-controller="Home" asp-action="Signature" asp-route-category="Signature">5 ELEMENTS</a></li>
-                                <li><a asp-controller="Home" asp-action="Signature" asp-route-category="Signature">GREEK GODS</a></li>
-                                <li><a asp-controller="Home" asp-action="Signature" asp-route-category="Signature">UNDERWORLD</a></li>
-                            </ul>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 

@@ -1,35 +1,35 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AISite.bundle.scp.css",
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Jewelry-ASPNet\\AISite\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AISite.bundle.scp.css",
       "PackagePath": "staticwebassets\\AISite.r6pdwpwznz.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\css\\custom.css",
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Jewelry-ASPNet\\AISite\\wwwroot\\css\\custom.css",
       "PackagePath": "staticwebassets\\css\\custom.css"
     },
     {
-      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Jewelry-ASPNet\\AISite\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Jewelry-ASPNet\\AISite\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat-new.js",
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Jewelry-ASPNet\\AISite\\wwwroot\\js\\chat-new.js",
       "PackagePath": "staticwebassets\\js\\chat-new.js"
     },
     {
-      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat-polling.js",
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Jewelry-ASPNet\\AISite\\wwwroot\\js\\chat-polling.js",
       "PackagePath": "staticwebassets\\js\\chat-polling.js"
     },
     {
-      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\chat.js",
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Jewelry-ASPNet\\AISite\\wwwroot\\js\\chat.js",
       "PackagePath": "staticwebassets\\js\\chat.js"
     },
     {
-      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Jewelry-ASPNet\\AISite\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {

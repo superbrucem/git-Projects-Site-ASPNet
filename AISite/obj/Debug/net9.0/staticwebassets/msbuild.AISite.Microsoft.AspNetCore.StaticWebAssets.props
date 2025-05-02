@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>12rt5uasb4</Fingerprint>
-      <Integrity>OSv1751Jbe0CkQqetU1i7UY/7YdZRy09mibgro+9vyk=</Integrity>
+      <Fingerprint>2g1v7g15e0</Fingerprint>
+      <Integrity>EhC4SsHhV9gnFNdGPtzPHkGn/L2Jl4B9q/4X9kGeXiA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\custom.css'))</OriginalItemSpec>
@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>783vty38gy</Fingerprint>
-      <Integrity>6ahhNCTs3unHySqfnjoXQ9J/eAG7KMecMMpfKR7+mq0=</Integrity>
+      <Fingerprint>wuyzxc4ixp</Fingerprint>
+      <Integrity>OMzIz3by5eF1o0i4ujiX1D+BPU5pe3cVcfGOdakp9HI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\chat.js'))</OriginalItemSpec>
@@ -102,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>i30svtvrtf</Fingerprint>
-      <Integrity>gk2ADKasxnngpRQcJ5ZSYRc1urV2bkQeuo903lvsbDY=</Integrity>
+      <Fingerprint>b560xsibhb</Fingerprint>
+      <Integrity>H7DQfV0G9WlIIBhksTE/7HhYN4rJ6yuOQKGqOVFmSuc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\chat-new.js'))</OriginalItemSpec>
@@ -120,8 +120,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7m2uevlcfw</Fingerprint>
-      <Integrity>QZ0TPgbEpsS0B+GL0yZOiukgSRf+/joKy3FJf0syCIE=</Integrity>
+      <Fingerprint>10fjsgbe1d</Fingerprint>
+      <Integrity>sd4H7GnZ+NduAuwpO/EkOpwG6GRGVPBxvs25R1usYkQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\chat-polling.js'))</OriginalItemSpec>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\AISite.csproj": {}
+    "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Jewelry-ASPNet\\AISite\\AISite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\AISite.csproj": {
+    "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Jewelry-ASPNet\\AISite\\AISite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\AISite.csproj",
+        "projectUniqueName": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Jewelry-ASPNet\\AISite\\AISite.csproj",
         "projectName": "AISite",
-        "projectPath": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\AISite.csproj",
+        "projectPath": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Jewelry-ASPNet\\AISite\\AISite.csproj",
         "packagesPath": "C:\\Users\\hello\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Site-ASPNet\\aisite\\obj\\",
+        "outputPath": "C:\\Users\\hello\\Documents\\GitHub\\git-Projects-Jewelry-ASPNet\\AISite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

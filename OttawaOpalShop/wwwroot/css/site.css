@@ -64,26 +64,80 @@ body {
 
 /* Main Header */
 .main-header {
-  background-color: #fff;
-  color: #333;
+  background: #3f51b5; /* Royal blue color from the image */
+  color: #fff;
   width: 100%;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  padding: 15px 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 25px 0;
+  position: relative;
+  border-bottom: 3px solid #303f9f; /* Slightly darker shade for the border */
+  overflow: hidden;
+}
+
+/* Add a decorative pattern overlay */
+.main-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0, rgba(255,255,255,0.05) 10px, transparent 10px, transparent 20px);
+  opacity: 0.5;
+}
+
+/* Header container styling */
+.main-header .container {
+  position: relative;
+  z-index: 1;
 }
 
 .shop-logo a {
-  color: #333;
+  color: #ffffff;
   text-decoration: none;
   font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 700;
   white-space: nowrap;
   letter-spacing: 0.12em;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+/* Add decorative elements to the logo */
+.shop-logo a::before,
+.shop-logo a::after {
+  content: '♦';
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.shop-logo a::before {
+  left: -10px;
+}
+
+.shop-logo a::after {
+  right: -10px;
 }
 
 .shop-logo a:hover {
-  color: #6a0dad;
+  color: #ffffff;
+  transform: scale(1.02);
+}
+
+.shop-logo a:hover::before,
+.shop-logo a:hover::after {
+  opacity: 1;
+  color: #ffffff;
 }
 
 .search-box {
@@ -99,34 +153,39 @@ body {
   width: 100%;
   max-width: 300px;
   display: flex;
-  border: 1px solid #e0e0e0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   overflow: hidden;
-  transition: box-shadow 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .search-box .input-group:focus-within {
-  box-shadow: 0 0 0 2px rgba(106, 13, 173, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-color: #ffffff;
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .search-box .form-control {
   border: none;
   height: 40px;
   flex: 1;
-  background-color: #fff;
-  color: #333;
+  background-color: transparent;
+  color: #fff;
   font-size: 0.9rem;
   letter-spacing: 0.05em;
   padding: 0 15px;
 }
 
 .search-box .form-control::placeholder {
-  color: #999;
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 300;
 }
 
 .btn-search {
-  background-color: #6a0dad;
+  background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
   border: none;
   height: 40px;
@@ -134,11 +193,11 @@ body {
   align-items: center;
   justify-content: center;
   width: 40px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-search:hover {
-  background-color: #5a0b8d;
+  background-color: #303f9f; /* Darker shade of the royal blue */
   color: #fff;
 }
 
@@ -176,11 +235,11 @@ body {
 }
 
 .nav-menu li a:hover {
-  color: #6a0dad;
+  color: #3f51b5; /* Royal blue color from the image */
 }
 
 .nav-menu li a.active {
-  color: #6a0dad;
+  color: #3f51b5; /* Royal blue color from the image */
   font-weight: 600;
 }
 
@@ -191,19 +250,21 @@ body {
   left: 20px;
   right: 20px;
   height: 2px;
-  background-color: #6a0dad;
+  background-color: #3f51b5; /* Royal blue color from the image */
 }
 
 /* Sidebar */
 .sidebar-container {
   background-color: #fff;
   border-radius: 8px;
-  overflow: hidden;
+  overflow: visible; /* Changed from hidden to allow submenus to show outside */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   font-size: 0.95rem;
   border: none;
   width: 100%;
   margin-right: 15px;
+  position: relative; /* Ensure proper positioning context */
+  z-index: 10; /* Ensure sidebar appears above other content */
 }
 
 .sidebar-section {
@@ -223,8 +284,8 @@ body {
 }
 
 .sidebar-header:hover {
-  background-color: #f9f5fd;
-  border-left-color: #6a0dad;
+  background-color: #eaf7ff;
+  border-left-color: #3498db;
 }
 
 .sidebar-header h3 {
@@ -241,7 +302,9 @@ body {
 }
 
 .sidebar-section.mt-4 {
-  margin-top: 0 !important;
+  margin-top: 15px !important;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 15px;
 }
 
 .sidebar-list {
@@ -275,16 +338,114 @@ body {
 }
 
 .sidebar-list li a:hover {
-  background-color: #f9f5fd;
-  color: #6a0dad;
-  border-left-color: #6a0dad;
+  background-color: #e8eaf6; /* Light royal blue background */
+  color: #3f51b5; /* Royal blue color from the image */
+  border-left-color: #3f51b5; /* Royal blue color from the image */
 }
 
 .sidebar-list li a.text-primary {
-  color: #6a0dad !important;
+  color: #3f51b5 !important; /* Royal blue color from the image */
   font-weight: 500;
-  background-color: #f9f5fd;
-  border-left-color: #6a0dad;
+  background-color: #e8eaf6; /* Light royal blue background */
+  border-left-color: #3f51b5; /* Royal blue color from the image */
+}
+
+/* Nested submenu styles */
+.sidebar-list li.has-submenu {
+  position: relative;
+}
+
+.sidebar-list li.has-submenu > a {
+  position: relative;
+}
+
+.sidebar-list li.has-submenu > a:after {
+  content: '›';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-list li.has-submenu:hover > a:after {
+  transform: translateY(-50%);
+  color: #3f51b5;
+}
+
+.sidebar-list .submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 220px;
+  list-style-type: none;
+  padding: 5px 0;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #e8eaf6;
+  border-left: none; /* Removed the blue border */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.sidebar-list li.has-submenu:hover > .submenu {
+  display: block;
+}
+
+.sidebar-list .submenu li {
+  display: block;
+  width: 100%;
+}
+
+.sidebar-list .submenu li a {
+  padding: 8px 15px;
+  font-size: 12px;
+  position: relative;
+  display: block;
+  white-space: normal;
+  border-left: none;
+  text-transform: capitalize; /* Make submenu items sentence case */
+}
+
+.sidebar-list .submenu li a:hover {
+  background-color: #e8eaf6;
+  border-left: none;
+}
+
+/* Style for the text-primary class in submenus */
+.sidebar-list .submenu li a.text-primary {
+  background-color: transparent;
+  border-left: none;
+  font-weight: 600;
+}
+
+/* For mobile devices, we'll still use the dropdown style */
+@media (max-width: 991px) {
+  .sidebar-list .submenu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    background-color: #f8f9ff;
+  }
+
+  .sidebar-list .submenu li a {
+    padding: 8px 20px 8px 35px;
+  }
+
+  .sidebar-list .submenu li a:before {
+    content: '•';
+    position: absolute;
+    left: 22px;
+    color: #3f51b5;
+    opacity: 0.7;
+  }
+
+  .sidebar-list .submenu li a:hover:before {
+    opacity: 1;
+  }
 }
 
 /* Main Content */
@@ -429,7 +590,7 @@ main[role="main"] {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
-  color: #6a0dad;
+  color: #3498db;
 }
 
 .breadcrumb {
@@ -455,7 +616,7 @@ main[role="main"] {
 }
 
 .breadcrumb-item a {
-  color: #6a0dad;
+  color: #3498db;
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.05em;
@@ -464,7 +625,7 @@ main[role="main"] {
 }
 
 .breadcrumb-item a:hover {
-  color: #5a0b8d;
+  color: #2980b9;
   text-decoration: underline;
 }
 
@@ -481,7 +642,7 @@ main[role="main"] {
 }
 
 .pagination .page-link {
-  color: #6a0dad;
+  color: #3f51b5; /* Royal blue color from the image */
   border-color: #e0e0e0;
   padding: 0.6rem 1rem;
   font-weight: 500;
@@ -490,20 +651,20 @@ main[role="main"] {
 }
 
 .pagination .page-link:hover {
-  background-color: #f9f5fd;
-  color: #5a0b8d;
-  border-color: #6a0dad;
+  background-color: #e8eaf6; /* Light royal blue background */
+  color: #303f9f; /* Darker royal blue */
+  border-color: #3f51b5; /* Royal blue color from the image */
 }
 
 .pagination .page-item.active .page-link {
-  background-color: #6a0dad;
-  border-color: #6a0dad;
+  background-color: #3f51b5; /* Royal blue color from the image */
+  border-color: #3f51b5; /* Royal blue color from the image */
   color: #fff;
-  box-shadow: 0 2px 5px rgba(106, 13, 173, 0.2);
+  box-shadow: 0 2px 5px rgba(63, 81, 181, 0.2);
 }
 
 .pagination .next-page {
-  background-color: #6a0dad;
+  background-color: #3f51b5; /* Royal blue color from the image */
   color: white;
   font-weight: 600;
   letter-spacing: 0.05em;
